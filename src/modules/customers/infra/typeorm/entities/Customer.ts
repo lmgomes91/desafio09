@@ -6,7 +6,7 @@ import {
   UpdateDateColumn,
 } from 'typeorm';
 
-@Entity('customer')
+@Entity('customers')
 class Customer {
   @PrimaryGeneratedColumn('uuid')
   id: string;
@@ -16,9 +16,6 @@ class Customer {
 
   @Column()
   email: string;
-
-  @Column()
-  avatar: string;
 
   @CreateDateColumn()
   created_at: Date;
