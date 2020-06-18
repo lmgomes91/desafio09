@@ -58,8 +58,8 @@ class CreateOrderService {
 
       const orderedProduct = {
         product_id: product.id,
-        quantity: Number(product.quantity),
-        price: Number(allProducts[index].price),
+        quantity: product.quantity,
+        price: allProducts[index].price,
       };
 
       updatedQuantity.push({

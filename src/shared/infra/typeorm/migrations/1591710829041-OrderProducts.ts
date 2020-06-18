@@ -15,13 +15,13 @@ export default class OrderProducts1591710829041 implements MigrationInterface {
           },
           {
             name: 'price',
-            type: 'decimal',
+            type: 'numeric',
+            precision: 10,
             scale: 2,
-            default: 0,
           },
           {
             name: 'quantity',
-            type: 'numeric',
+            type: 'integer',
           },
           {
             name: 'product_id',

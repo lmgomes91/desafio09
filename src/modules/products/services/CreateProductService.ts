@@ -20,6 +20,7 @@ class CreateProductService {
 
   public async execute({ name, price, quantity }: IRequest): Promise<Product> {
     const checkProduct = await this.productsRepository.findByName(name);
+
     if (checkProduct) {
       throw new AppError('Product name already used');
     }
